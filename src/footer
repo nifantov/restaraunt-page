@@ -1,0 +1,13 @@
+function addFooter() {
+    const footer = document.createElement("footer");
+    footer.classList.add("footer");
+
+    const firstP = document.createElement("p");
+    firstP.textContent = `This is a project for "The Odin Project" in which I have to make a restaraunt page using JavaScript`;
+
+    footer.appendChild(firstP);
+
+    return footer;
+}
+
+export default addFooter;
