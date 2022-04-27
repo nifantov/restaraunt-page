@@ -1,0 +1,183 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Oswald", sans-serif;
+}
+
+:root {
+    --black: rgb(41, 41, 41);
+    --red: rgb(255, 79, 79);
+    --white: rgb(247, 247, 247);
+}
+
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;  
+    background-image: url("https://thumb.tildacdn.com/tild3165-6135-4664-a238-393261333637/-/resize/912x/-/format/webp/282247312034211-3.png");
+    height: fit-content
+   
+}
+
+.header {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--black);
+    align-items: center;
+    font-size: 60px;
+    color: var(--red);
+    margin-bottom: 50px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 50px;
+    gap: 20px;
+}
+
+.button {
+    cursor: pointer;
+    border-style: none;
+    outline: none;
+    background-color: transparent;
+    transition: transform 0.3s;
+    color: white;
+    font-size: 18px;
+}
+
+.button:hover {
+    transform: translateY(-5px);
+    color: var(--red);
+}
+
+.active {
+    color: var(--red);
+}
+
+.about, .contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 120px;
+    
+}
+footer {
+    margin-top: 50px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw; 
+    background-color: var(--black);
+    color: white;
+  }
+  a {
+	position: relative;
+	color: var(--red); 
+	cursor: pointer;
+	line-height: 1; 
+	text-decoration: none; 
+
+}
+  a:after {
+	display: block;
+	position: absolute;
+	left: 0; 
+	width: 0;
+	height: 2px; 
+	background-color: var(--red); 
+	content: "";
+	transition: width 0.3s ease-out; 
+    
+}
+
+a:hover:after,
+a:focus:after {
+	width: 100%; 
+}
+
+.aboutText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.aboutText>p {
+    font-size: 40px;
+    margin-bottom: 10px;
+    font-weight: 800;
+}
+
+button {
+    color: #ffffff;
+    font-size: 24px;
+    line-height: 1.55;
+    font-weight: 700;
+    border-width: 1px;
+    background-color: var(--red);
+    border-color: transparent;
+    border-style: solid;
+    padding: 5px 20px;
+    transition: transform 0.3s;
+}
+
+button:hover {
+    background-color: var(--black);
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+
+.aboutImage {
+    height: 500px;
+    filter: drop-shadow(0 0 10px rgba(100,0,0,0.5))
+}
+
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+
+
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+    cursor: pointer;
+    border: 1px solid var(--white);
+    box-shadow: 2px 2px 2px 2px var(--white);
+    transition: background-color 0.3s;
+    background-color: white;
+    gap:20px;
+
+}
+
+.item:hover {
+    transform: translateY(-5px);
+}
+
+.item>p {
+    font-size: 18px;
+}
+
+h3 {
+    font-size: 30px;
+}
+.itemImg {
+    height: 200px;
+    
+}
