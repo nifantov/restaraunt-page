@@ -1,5 +1,6 @@
 import addContact from "./contact";
 
+
 function addAbout() {
     const main = document.querySelector("main");
 
@@ -11,7 +12,7 @@ function addAbout() {
 
     const p1 = document.createElement("p");
     const p2 = document.createElement("p");
-    p1.textContent = "We didn't invite a hot dog,";
+    p1.textContent = "We didn't invented a hot dog,";
     p2.textContent = "but we made it awesome!";
 
     const button = document.createElement("button");
